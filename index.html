@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Mon CV - Figma</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="Bootstrap_5.3.0/css/bootstrap.css"><!--Intégration manuelle de bootstrap.css pour retirer les margin-->
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"><!-- CDN Bootstrap pour les icons -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <nav class="bg">
+            <img src="images/Logo.png" alt="Logo Loris QUESADO">
+
+            <ul>
+                <li><a href="#home">Home<span>.</span></a></li>
+                <li><a href="#skills">Compétences<span>.</span></a></li>
+                <li><a href="#experience">Expérience<span>.</span></a></li>
+                <li><a href="#education">Éducation<span>.</span></a></li>
+                <li><a href="#portfolio">Portfolio<span>.</span></a></li>
+                <li><a href="#recommendations">Recommandations<span>.</span></a></li>
+            </ul>
+            <ul>
+                <li><a href="#contact">Contact<span>.</span></a></li>
+            </ul>
+            
+            <button type="button" id="buttonNav"><!-- Boutton Nav en attente de JS pour animation -->
+                <span class="butNavDivider"></span>
+                <span class="butNavDivider"></span>
+                <span class="butNavDivider"></span>
+            </button>
+        </nav>
+
+        <section id="home" class="bg">
+            <div class="buttonContent but-1"><p>Loris <br><strong>QUESADO</strong></p></div>
+            <div class="smallBubble b1"></div>
+            <div class="smallBubble b2"></div>
+            <div class="smallBubble b3"></div>
+            <div class="buttonContent but-3"><p>Conseiller Immobilier en Reconversion Professionnelle - Développeur Web</p></div>
+            <div class="mediumBubble b4"></div>
+            <img src="images/mefinal.png" alt="Photo de Loris QUESADO">
+            <div id="bigBubble"></div>
+
+            <div class="socialMedia">
+                <ul>
+                    <li><a href="https://www.facebook.com/loris.quesado/" target="_blank"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/loris.qsd/" target="_blank"><i class="bi bi-instagram"></i></a></i></li>
+                    <li><a href="https://www.youtube.com/channel/UCxBuT8bGOwwrMBy7RjDpE_w" target="_blank"><i class="bi bi-youtube"></i></a></i></li>
+                </ul>
+            </div>
+
+            <div class="buttonContent but-4">Télécharger CV<a href="#" target="_blank" title="Non disponible pour le moment"><i class="bi bi-download"></i></a></div>
+            <div class="buttonContent but-2"><p>Informations Complémentaires <i class="bi bi-arrow-down"></i></p>
+                <ul id="hideInfo">
+                    <li>Permis B - Véhiculé</li>
+                    <li>11/12/1997 (25 ans)</li>
+                    <li>loris.quesado@hotmail.fr</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="header">
+                <h1>Compétences</h1>
+                <div class="divider"></div>
+                <h2>Hard <span>Skills</span></h2>
+            </div>
+
+            <div class="gallery">
+                <div class="galleryCard">
+                    <div class="galleryImg html5">
+                        <img src="images/Skills/HTML5.png" alt="Logo HTML5">
+                    </div>
+                        
+                    <h3>HTML5</h3>
+                    <p>Maîtrise : 60%</p>
+                    <p>Premier langage avec lequel j'ai appris à coder.</p>
+                </div>
+
+                <div class="galleryCard">
+                    <div class="galleryImg css3">
+                        <img src="images/Skills/CSS3.png" alt="Logo CSS3">
+                    </div>
+                        
+                    <h3>CSS3</h3>
+                    <p>Maîtrise : 50%</p>
+                    <p>Venu complété HTML5. CSS3 m’a permis de rendre mes premiers sites beaucoup plus esthétiques.</p>
+                </div>
+
+                <div class="galleryCard">
+                    <div class="galleryImg bootstrap">
+                        <img src="images/Skills/bootstrap.png" alt="Logo BootStrap">
+                    </div>
+                        
+                    <h3>BootStrap</h3>
+                    <p>Maîtrise : 50%</p>
+                    <p>Découverte de ma première librairie. Responsive avec le système de grid & factorisation de code.</p>
+                </div>
+
+                <div class="galleryCard">
+                    <div class="galleryImg js">
+                        <img src="images/Skills/JS.png" alt="Logo JavaScript">
+                    </div>
+                        
+                    <h3>JavaScript</h3>
+                    <p>Maîtrise : 30%</p>
+                    <p>Vers la programmation avec Javascript !
+                        Objectif : Rendre mes sites interactifs.</p>
+                </div>
+
+                <div class="galleryCard">
+                    <div class="galleryImg jquery">
+                        <img src="images/Skills/jquery.png" alt="Logo jQuery">
+                    </div>
+                        
+                    <h3>jQuery</h3>
+                    <p>Maîtrise : 40%</p>
+                    <p>Cette librairie js facilite grandement l’écriture de mes premiers scripts.</p>
+                </div>
+
+                <div class="galleryCard">
+                    <div class="galleryImg mysql">
+                        <img src="images/Skills/mysql.png" alt="Logo mysql">
+                    </div>
+                    
+                <h3>MySQL</h3>
+                <p>Maîtrise : 30%</p>
+                <p>Et côté back-end, que se passe-t-il ?
+                    Commençons déjà par découvrir un gestionnaire de base de données.</p>
+                </div>
+
+                <div class="galleryCard">
+                    <div class="galleryImg php">
+                        <img src="images/Skills/php.png" alt="Logo php">
+                    </div>
+                    
+                <h3>PHP</h3>
+                <p>Maîtrise : 30%</p>
+                <p>Et maintenant on dynamise nos pages avec PHP !!!</p>
+                </div>
+            </div>
+
+            <div class="header">
+                <div class="divider"></div>
+                <h2>Soft <span>Skills</span></h2>
+            </div>
+
+            <div class="gallery">
+                <div class="galleryCard">
+                    <div class="galleryImg">
+                        <img src="images/Skills/autonomy.png" alt="Autonomie">
+                    </div>
+
+                    <h3>Autonomie</h3>
+                    <p>Être capable de s'auto-gérer est l'une des qualités qui me caractérise.</p>
+                </div>
+
+                <div class="galleryCard">
+                    <div class="galleryImg">
+                        <img src="images/Skills/teamwork.png" alt="Travail d'équipe">
+                    </div>
+
+                    <h3>Travail d'équipe</h3>
+                    <p>J’ai un goût prononcé pour les sports d’équipe, ce qui me permet d’avoir un esprit adapté.  </p>
+                </div>
+
+                <div class="galleryCard">
+                    <div class="galleryImg">
+                        <img src="images/Skills/adaptability.png" alt="Capacité d'adaptation">
+                    </div>
+
+                    <h3>Adaptabilité</h3>
+                    <p id="test">Être commercial, c’est s’adapté à des situations et des personnes.C’est une compétence que j’ai pu façonner grâce à mon précédent métier.</p>
+                </div>
+
+                <div class="galleryCard">
+                    <div class="galleryImg">
+                        <img src="images/Skills/discipline.png" alt="Discipline">
+                    </div>
+
+                    <h3>Discipline</h3>
+                    <p>L’une des qualités que je m’efforce de perfectionner avec les années.</p>
+                </div>
+
+                <div class="galleryCard">
+                    <div class="galleryImg">
+                        <img src="images/Skills/curiosity.png" alt="Curiosité">
+                    </div>
+
+                    <h3>Curiosité</h3>
+                    <figure>
+                        <blockquote cite="https://www.dicocitations.com/citations/citation-97973.php">
+                            <p>"Celui qui croit savoir n'apprend plus"</p>
+                        </blockquote>
+                        <figcaption>— Pierre Bottero</figcaption>
+                    </figure>
+                    <p>La curiosité est déterminante et me pousse à apprendre d’avantage.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="bg">
+            <div class="container">
+                <div class="header">
+                    <h1>Expérience Professionnelle</h1>
+                    <div class="divider"></div>
+                </div>
+
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-badge"><span class="bi bi-briefcase-fill"></span></div>
+                        <div class="timeline-panel-container">
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h3>NJ CONSEIL - Laforêt Immobilier GOUSSAINVILLE (95)</h3>
+                                    <h4>Conseiller immobilier - Transaction Vente</h4>
+                                    <p class="color-txt-timeline"><span class="bi bi-clock-fill"></span> Juillet 2017 - Février 2023</p>
+                                </div>
+                                <div class="timeline-body">
+                                    <ul>
+                                        <li>Prospection directe et indirecte</li>
+                                        <li>Estimation vente de biens immobiliers</li>
+                                        <li>Rédaction et signature de mandat de vente simple & exclusif</li>
+                                        <li>Rédaction et signature de compromis de vente</li>
+                                        <li>Accompagnement dans la recherche de crédit des acquéreurs</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+    
+                    <li>
+                        <div class="timeline-badge"><span class="bi bi-briefcase-fill"></span></div>
+                        <div class="timeline-panel-container-inverted">
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h3>NJ CONSEIL - Laforêt Immobilier GOUSSAINVILLE (95)</h3>
+                                    <h4>Conseiller immobilier - Transaction Locative (alternance)</h4>
+                                    <p class="color-txt-timeline"><span class="bi bi-clock-fill"></span> Novembre 2015 - Juillet 2017</p>
+                                </div>
+                                <div class="timeline-body">
+                                    <ul>
+                                        <li>Estimations locatives</li>
+                                        <li>Visites, constitution de dossier, réalisation d'état des lieux d'entrée et de sortie pour les candadidats locataires</li>
+                                        <li>Rédaction et signature de bail de location</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="education">
+            <div class="header">
+                <h1>Éducation</h1>
+                <div class="divider"></div>
+            </div>
+
+            <div class="gallery">
+                <div class="educationCard">
+                    <p>2013 - 2015</p>
+                    <i class="bi bi-award-fill"></i>
+                    <h3>Lycée Léonard de Vinci - <br>St Witz</h3>
+                    <h4>Diplôme du Baccalauréat Technologique -<br>Mention Très Bien</h4>
+                    <div class="divider"></div>
+                    <p>Système d'Information et de Gestion</p>
+                    <a href="docs/BAC_SIG.pdf" class="button1" target="_blank">Télécharger diplôme <i class="bi bi-download"></i></a>
+                </div>
+
+                <div class="educationCard">
+                    <p>2015 - 2017</p>
+                    <i class="bi bi-award-fill"></i>
+                    <h3>École SupTertiaire - <br>Paris (10)</h3>
+                    <h4>Brevet de Technicien Supérieur (BTS) -<br>Mention Bien</h4>
+                    <div class="divider"></div>
+                    <p>Professions Immobilières</p>
+                    <a href="docs/BTS_PI.pdf" class="button1" target="_blank">Télécharger diplôme <i class="bi bi-download"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="bg">
+            <div class="container-fluid">
+                <div class="header">
+                    <h1>Portfolio</h1>
+                    <div class="divider"></div>
+                </div>
+
+                <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/Portfolio/travelAgency.PNG" class="d-block w-100" alt="Reproduction d'un site de voyage - Travel Agency">
+                            <div class="carousel-caption">
+                                <a href="portfolio/TravelAgency/index.html" target="_blank"><h3>Travel Agency</h3></a>
+                                <p>Intégration d'une maquette en HTML5 & CSS3 pour un site de voyage.</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="images/Portfolio/actrices.PNG" class="d-block w-100" alt="Animation avec jQuery d'un site qui classe les actrices">
+                            <div class="carousel-caption">
+                                <a href="portfolio/actricesRanking/index.html" target="_blank"><h3>Classements Actrices</h3></a>
+                            <p>Classements des meilleures actrices avec une animation en jQuery.</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="images/Portfolio/snakejs.PNG" class="d-block w-100" alt="Reproduction du jeu snake en javascript">
+                            <div class="carousel-caption">
+                                <a href="portfolio/SnakeJS/index.html" target="_blank"><h3>Snake.JS</h3></a>
+                            <p>Reproduction du jeu Snake en Javascript.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="recommendations">
+            <div class="container-fluid">
+                <div class="header">
+                    <h1>Recommandations</h1>
+                    <div class="divider"></div>
+                </div>
+
+                <div id="myCarousel" class="carousel carousel-dark slide text-center">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <h3>"Loris et toute l'équipe est extrêmement motivée et dynamique et répond à toutes nos questions n'hésitez surtout pas pour changer de maison il faut passer chez eux !!"</h3>
+                            <h4>BONNERON Frédéric</h4>
+                        </div>
+
+                        <div class="carousel-item">
+                            <h3>"Très bonne agence, en particulier Loris QUESADO qui est à l'écoute, très professionnel, honnête et transparent !"</h3>
+                            <h4>DENIS Sandrine</h4>
+                        </div>
+
+                        <div class="carousel-item">
+                            <h3>"Personnel Très professionnel et impliqué. Trouve toujours des solutions pour que tout se déroule bien.
+                                Nous conseillerons cette agence aux personnes cherchant à acheter ou à vendre.
+                                Encore une fois un grand merci à Loris"</h3>
+                            <h4>BILGIC Suheyla</h4>
+                        </div>
+
+                        <div class="carousel-item">
+                            <h3>"Je tiens à exprimer toute ma gratitude à Monsieur Loris Quesado pour la réussite de mon tout premier achat immobilier."</h3>
+                            <h4>BOUMAZA Lindsay</h4>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="bg">
+            <div class="container">
+                <div class="header">
+                    <h1>Contact</h1>
+                    <div class="divider"></div>
+                </div>
+                    
+               <div class="row">
+                   <div class="col-lg-10 offset-lg-1">
+                        <form id="contact-form" method="post" action="" role="form">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="firstname">Prénom *</label>
+                                    <input id="firstname" type="text" name="firstname" class="form-control" placeholder="Votre prénom">
+                                    <p class="comments"></p>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="name">Nom *</label>
+                                    <input id="name" type="text" name="name" class="form-control" placeholder="Votre Nom">
+                                    <p class="comments"></p>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email">Email *</label>
+                                    <input id="email" type="text" name="email" class="form-control" placeholder="Votre Email">
+                                    <p class="comments"></p>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="phone">Téléphone</label>
+                                    <input id="phone" type="tel" name="phone" class="form-control" placeholder="Votre Téléphone">
+                                    <p class="comments"></p>
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="message">Message *</label>
+                                    <textarea id="message" name="message" class="form-control" placeholder="Votre Message" rows="4"></textarea>
+                                    <p class="comments"></p>
+                                </div>
+                                <div class="col-md-12">
+                                    <p><strong>* Ces informations sont requises.</strong></p>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="submit" class="button1" value="Envoyer">
+                                </div>    
+                            </div>
+                        </form>
+                    </div>
+               </div>
+            </div>
+        </section>
+
+        <footer class="text-center">
+            <a href="#home"><span class="bi bi-chevron-up"></span></a>
+            <h5>© - Copyright 2023 Loris QUESADO - Tous droits réservés.</h5>
+        </footer>
+
+        
+    </body>
+</html>

@@ -40,66 +40,19 @@ h4{
 }
 
 /* NAVBAR */
-nav{
+.navbar-nav{
+    width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0 80px;
-    height: 100px;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+nav{
+    
     font-size: 24px;
     color: #716A6A;
     font-weight: bold;
-    width: 100%;
-    position: fixed;
-    z-index: 3;
     border-bottom: solid 2px white;
-}
-nav h1{
-    color: black;
-}
-nav ul{
-    list-style: none;
-    display: flex;
-}
-nav li{
-    margin-right: 80px;
-    margin-bottom: 20px;
-}
-nav li:last-child{
-    margin-right: 0;
-}
-nav li a{
-    text-decoration: none;
-    color: #716A6A;
-    transition: all 0.3s ease-in 0s;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-}
-nav li a span{
-    margin-top: -20px;
-    opacity: 0;
-    transition: all 0.3s ease-in 0s;
-    font-size: 32px;
-}
-nav li a:hover, nav li a:hover span{
-    color: #494FCD;
-    opacity: 100;
-}
-#buttonNav{/* Boutton Nav en attente de JS pour animation */
-    padding: 10px 15px;
-    display: none;
-    border: 4px solid black;
-    border-radius: 10px;
-    background-color: transparent;
-    flex-direction: column;
-    gap: 6px;
-}
-.butNavDivider{
-    height: 5px;
-    width: 40px;
-    background-color: black;
-    border-radius: 20px;
 }
 
 /* HOME */
@@ -107,6 +60,8 @@ nav li a:hover, nav li a:hover span{
     height: 880px;
     overflow: hidden;
     padding-top: 80px;
+    position: relative;
+    bottom: 100px;
 }
 #home img{
     display: block;
@@ -115,7 +70,7 @@ nav li a:hover, nav li a:hover span{
     height: auto;
     z-index: 2;
     position: relative;
-    bottom: 316px;
+    bottom: 1098px;
 }
 #home #bigBubble{
     width: 535px;
@@ -127,7 +82,7 @@ nav li a:hover, nav li a:hover span{
     display: block;
     margin: 0 auto;
     position: relative;
-    bottom: 702px;
+    bottom: 156px;
 }
 #home .smallBubble{
     width: 50px;
@@ -164,14 +119,14 @@ nav li a:hover, nav li a:hover span{
     margin: 0 auto;
     position: relative;
     top: 567px;
-    left: 435px;
+    left: 372px;
     z-index: 1;
 }
 #home .b4{
     display: block;
     margin: 0 auto;
     position: relative;
-    top: 137px;
+    bottom: 39px;
     right: 655px;
     z-index: 1;
 }
@@ -240,8 +195,8 @@ nav li a:hover, nav li a:hover span{
     display: block;
     margin: 0 auto;
     position: relative;
-    bottom: 1112px;
-    left: 583px;
+    bottom: 540px;
+    left: 520px;
     z-index: 2;
 }
 #home .bi-download{
@@ -277,7 +232,7 @@ nav li a:hover, nav li a:hover span{
 }
 #home .socialMedia ul{
     position: relative;
-    bottom: 1025px;
+    bottom: 454px;
     display: inline-block;
 }
 #home .socialMedia li{
@@ -305,7 +260,9 @@ nav li a:hover, nav li a:hover span{
 
 /* SKILLS */
 #skills{
-    margin: 50px 200px;
+    margin: 0 200px;
+    position: relative;
+    bottom: 50px;
 }
 #skills h1{
     text-align: center;
@@ -643,84 +600,52 @@ footer h5{
 }
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 575px) {
-    /* EXPERIENCES PRO */
-    .timeline-heading h3,.timeline-heading h4, .timeline-heading > p{
-        font-size: 16px;
-    }
-
-    .timeline-body ul{
-        display: none;
-    }
-}
-@media screen and (max-width: 767px) {
-
-}
-@media screen and (max-width: 991px) {
-    nav ul{
-        display: none;
-    }
-    #buttonNav{
-        display: flex;
-    }
-    nav{
-        flex-direction: row-reverse;
-        padding: 0 20px !important;
-    }
-}
-@media screen and (max-width: 1199px) {
-    /* NAVBAR */
-    nav{
-        padding: 0 40px;
-    }
-    /* HOME */
-    #home .but-2{
-        left: 411px;
-    }
-    #home .b2{
-        left: 261px;
-    }
-    #home .but-4{
-        left: 432px !important;
-    }
-    #home .b3{
-        left: 283px !important;
-    }
-    #home .but-3{
-        right: 355px !important;
-    }
-    #home .b4{
-        right: 492px !important;
-    }
-    /* SKILLS */
-    #skills{
-        margin: 50px 100px;
-    }
-    /* PORTFOLIO */
-    #carouselExampleDark{
-        margin: 0 100px;
-    }
-
-}
 @media screen and (max-width: 1399px) {
     /* NAVBAR */
     nav li{
         font-size: 20px;
-        margin-right: 25px;
+        margin-right: 20px;
     }
     /* HOME */
-    #home .but-4{
-        left: 520px;
+    #home {
+        height: 700px;
     }
-    #home .b3{
-        left: 372px;
+    #home .but-1 {
+        top: 80px;
+        right: 278px;
+    }
+    #home .but-2 {
+        bottom: 1655px;
+        left: 425px;
     }
     #home .but-3{
-        right: 450px;
+        top: 144px;
+        right: 335px;
+    }
+    #home .but-4{
+        bottom: 736px;
+        left: 428px;
+    }
+    #home .b1 {
+        top: 52px;
+        right: 386px;
+    }
+    #home .b2 {
+        left: 273px;
+    }
+    #home .b3 {
+        top: 288px;
+        left: 281px;
     }
     #home .b4{
-        right: 581px;
-        top: -43px;
+        right: 480px;
+        top: -89px;
+    }
+    #home .socialMedia ul {
+        bottom: 630px;
+    }
+    #home img {
+        width: 350px;
     }
     /* EDUCATION */
     #education{
@@ -730,4 +655,215 @@ footer h5{
     #recommendations{
         margin: 50px 100px;
      }
+}
+@media screen and (max-width: 1199px) {
+    /* NAVBAR */
+    nav{
+        padding: 10px 40px;
+    }
+    nav li{
+        font-size: 16px;
+        margin-right: 15px;
+    }
+    nav ul {
+        display: flex;
+    }
+    /* HOME */
+    #home {
+        height: 700px;
+    }
+    #home p, #home .but-4 {
+        font-size: 20px;
+    }
+    #hideInfo li{
+        font-size: 18px;
+        margin-left: 15px;
+    }
+    #home .but-1 {
+        padding: 10px 40px;
+    }
+    #home .but-2 {
+        bottom: 1599px;
+        left: 290px;
+    }
+    #home .but-3{
+        top: 43px;
+        right: 290px
+    }
+    #home .but-4{
+        padding: 15px;
+        bottom: 665px;
+        left: 325px;
+    }
+    #home .b2 {
+        left: 141px;
+    }
+    #home .b3 {
+        top: 331px;
+        left: 471px;
+    }
+    #home .b4{
+        right: 424px;
+        top: -166px;
+    }
+    #home .socialMedia ul {
+        bottom: 585px;
+    }
+    #home img {
+        bottom: 1038px;
+    }
+    /* SKILLS */
+    #skills{
+        margin: 0px 100px;
+    }
+    /* PORTFOLIO */
+    #carouselExampleDark{
+        margin: 0 100px;
+    }
+    #portfolio {
+        padding: 50px 0;
+    }
+    /* RECOMMENDATIONS */
+    #recommendations {
+        margin: 50px 0;
+    }
+}
+@media screen and (max-width: 991px) {
+    nav li {
+        font-size: 20px;
+        margin: 0;
+    }
+    #hideUl {
+        display: none;
+    }
+    #buttonNav{
+        display: flex;
+        margin-top: 10px;
+    }
+    nav{
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+    /* HOME */
+    
+    #home .but-1 {
+        right: 262px;
+    }
+    #home .but-2 {
+        left: 223px;
+    }
+    #home .but-3{
+        width: 230px;
+        right: 224px;
+    }
+    #home .but-4{
+        font-size: 16px;
+        padding: 0;
+        width: 190px;
+        left: 270px;
+    }
+    #home .b2 {
+        left: 76px;
+    }
+    #home .b3 {
+        left: 365px;
+        top: 364px;
+    }
+    #home .b4{
+        right: 309px;
+        top: -185px;
+    }
+    #home .socialMedia ul {
+        bottom: 611px;
+    }
+    #home img{
+        bottom: 1016px;
+    }
+}
+@media screen and (max-width: 767px) {
+    /* HOME */
+    #home {
+        height: 600px;
+    }
+    #home p, #home .but-4, #home .bi-arrow-down, #hideInfo li {
+        font-size: 16px;
+    }
+    #home .but-1 {
+        right: 175px;
+        width: 170px;
+    }
+    #home .but-2 {
+        bottom: 1282px;
+        width: 235px;
+        padding: 15px;
+        left: 172px;
+    }
+    #home .but-2 ul{
+        padding-left: 0;
+    }
+    #home .but-3{
+        width: 200px;
+        right: 179px;
+        top: -7px;
+    }
+    #home .but-4{
+        left: 212px;
+        bottom: 578px;
+    }
+    #home .b1 {
+        top: -10px;
+        right: 255px;
+    }
+    #home .b2 {
+        left: 56px;
+        top: 6px;
+    }
+    #home .b3 {
+        left: 304px;
+        top: 285px;
+    }
+    #home .b4{
+        right: 88px;
+        top: -219px;
+    }
+    #home .socialMedia ul {
+        z-index: 1;
+        bottom: 531px;
+    }
+    #home img {
+        width: 250px;
+        bottom: 830px;
+    }
+    #home #bigBubble {
+        width: 400px;
+        height: 400px;
+    }
+    /* SKILLS */
+    #skills .galleryCard p {
+        font-size: 18px;
+    }
+    /* EXPERIENCES PRO */
+    #experience {
+        padding: 50px 0;
+    }
+    .timeline-panel {
+        width: 100%;
+        padding: 20px;
+    }
+    /* PORTFOLIO */
+    #carouselExampleDark{
+        margin: 0 50px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    /* EXPERIENCES PRO */
+    .timeline-heading h3,.timeline-heading h4, .timeline-heading > p{
+        font-size: 16px;
+    }
+
+    .timeline-body ul{
+        display: none;
+    }
 }

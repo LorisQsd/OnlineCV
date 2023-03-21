@@ -22,27 +22,40 @@
     </head>
 
     <body>
-        <nav class="bg">
-            <img src="images/Logo.png" alt="Logo Loris QUESADO">
-
-            <ul>
-                <li><a href="#home">Home<span>.</span></a></li>
-                <li><a href="#skills">Compétences<span>.</span></a></li>
-                <li><a href="#experience">Expérience<span>.</span></a></li>
-                <li><a href="#education">Éducation<span>.</span></a></li>
-                <li><a href="#portfolio">Portfolio<span>.</span></a></li>
-                <li><a href="#recommendations">Recommandations<span>.</span></a></li>
-            </ul>
-            <ul>
-                <li><a href="#contact">Contact<span>.</span></a></li>
-            </ul>
-            
-            <button type="button" id="buttonNav"><!-- Boutton Nav en attente de JS pour animation -->
-                <span class="butNavDivider"></span>
-                <span class="butNavDivider"></span>
-                <span class="butNavDivider"></span>
+    <nav id="myNavbar" class="navbar navbar-expand-lg navbar-light sticky-top bg">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-        </nav>
+            <a href="index.html"><img src="images/Logo.png" alt="Logo Loris QUESADO"></a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Moi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Compétences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Expérience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#recommendations">Recommandation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
         <section id="home" class="bg">
             <div class="buttonContent but-1"><p>Loris <br><strong>QUESADO</strong></p></div>
@@ -51,7 +64,7 @@
             <div class="smallBubble b3"></div>
             <div class="buttonContent but-3"><p>Conseiller Immobilier en Reconversion Professionnelle - Développeur Web</p></div>
             <div class="mediumBubble b4"></div>
-            <img src="images/mefinal.png" alt="Photo de Loris QUESADO">
+            
             <div id="bigBubble"></div>
 
             <div class="socialMedia">
@@ -63,6 +76,7 @@
             </div>
 
             <div class="buttonContent but-4">Télécharger CV<a href="#" target="_blank" title="Non disponible pour le moment"><i class="bi bi-download"></i></a></div>
+            <img src="images/mefinal.png" alt="Photo de Loris QUESADO">
             <div class="buttonContent but-2"><p>Informations Complémentaires <i class="bi bi-arrow-down"></i></p>
                 <ul id="hideInfo">
                     <li>Permis B - Véhiculé</li>
